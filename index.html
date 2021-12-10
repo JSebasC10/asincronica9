@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>Asincrónica 9</h1>
+	<br>
+	Radio: <input type="text" name="R1" id="v1"></p><br>
+	<p>Resultado: <input type="text" name="res" id="res"></p><br>
+        <button onclick="calcular();">Ø</button>
+        <button onclick="calcular1();">P</button>
+        <button onclick="calcular2();">A</button>
+    <script type="text/javascript">
+		function calcular(){
+			let v1=document.getElementById('v1').value;
+			let vv1=parseInt(v1,10);
+			let res=2*vv1;
+			document.getElementById('res').value=res;
+		}
+		function calcular1(){
+			let v1=document.getElementById('v1').value;
+			let vv1=parseInt(v1,10);
+			let res=2*Math.PI*vv1;
+			document.getElementById('res').value=res;
+		}
+		function calcular2(){
+			let v1=document.getElementById('v1').value;
+			let vv1=parseInt(v1,10);
+			let res=Math.PI*(vv1*vv1);
+			document.getElementById('res').value=res;
+		}
+    </script>
+</body>
+</html>
